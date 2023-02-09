@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.js"></script>
+    <title>mejangoding.com</title>
+</head>
+<body>
+    <header id="header">
+        <div class="jumbotron">
+            <h1>mejangoding.com</h1>
+            <blockquote>ngulik kode lagi hari ini</blockquote>
+        </div>
+        <nav>
+            <ul class="a">
+                <li><a href="#header">Header</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#aside" onclick="aside()">Aside</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+            <ul>
+                <li class="burger"><i class="fa-solid fa-bars" onclick="drop()"></i></li>
+                <li class="cross"><i class="fa-solid fa-x" onclick="up()"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- popup -->
+        <div class="popup">
+            <div class="pop-content"></div>
+            <button type="submit" class="btn btn-3" onclick="closePopUp()">Close</button>
+        </div>
+        <!-- end-popup -->
+        <div id="content">
+            <article>
+                <h1 class="content-1-heading">Who are we?</h1>
+                <p class="content-1">
+                    mejangoding.com adalah sebuah website penyedia layanan
+                    pembelajaran bahasa pemrograman komputer yang dikemas secara
+                    virtual. Lebih lanjut, website ini dibuat untuk membantu
+                    memahami bahasa pemrograman bagi mereka yang sedang mempelajari
+                    dan menekuni dunia pemrograman komputer. Selain itu,
+                    mejangoding.com juga diproyeksikan agar dapat menjadi suatu
+                    tempat yang dapat digunakan sebagai referensi dalam pengerjaan
+                    baris kode program di sebuah kasus.
+                  </p>
+                  <button type="submit" class="btn btn-1" onclick="popUp()">Read on popup</button>
+            </article>
+            <article>
+                <h1 class="content-2-heading">What we do?</h1>
+                <p class="content-2">
+                    mejangoding.com memberikan tutorial mengenai pemrograman
+                    website. Dalam konteks pembelajarannya, mejangoding.com
+                    menyajikan berbagai studi kasus pemrograman website yang akan
+                    diulas secara ringan per baris kode dan menampilkan hasil dari
+                    run kode programnya. Tentu hal ini dimaksudkan agar para pembaca
+                    dapat dengan mudah memahami maksud tiap baris kode pemrograman
+                    yang ada.
+                </p>
+              <button type="submit" class="btn btn-2" onclick="popUp()">Read on popup</button>
+            </article>
+        </div>
+        <aside id="aside" class="aside">
+            <i class="fa-solid fa-x close-side" onclick="closeSide()"></i>
+            <blockquote>Author's Profile</blockquote>
+            <img src="assets/img/profile.jpg" class="profile-img" alt="profile">
+            <p>Destanto Muhamad Yusuf</p>
+            <p>Find me on</p>
+            <div class="icon">
+                <a href="https://www.instagram.com/itsdesta_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Destantomy"><i class="fa-brands fa-github"></i></a>
+                <a href="https://id.quora.com/profile/Waton-Maca"><i class="fa-brands fa-quora"></i></a>
+            </div>
+            <p style="border-bottom: 1px solid #34495e;">This site was made with <br><i class="fa-solid fa-heart" style="color: #de3163;"></i> & <i class="fa-solid fa-mug-saucer" style="color: LightSalmon;"></i></p>
+        </aside>
+    </main>
+    <footer id="footer">
+        <p>copyrights &copy mejangoding.com 2023</p>
+    </footer>
+    <script src="assets/index.js"></script>
+</body>
+</html>
