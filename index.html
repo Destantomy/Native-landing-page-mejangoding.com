@@ -16,10 +16,10 @@
         </div>
         <nav>
             <ul class="a">
-                <li><a href="#header">Header</a></li>
-                <li><a href="#content">Content</a></li>
-                <li><a href="#aside" onclick="aside()">Aside</a></li>
-                <li><a href="#footer">Footer</a></li>
+                <li><a href="#header">Top</a></li>
+                <li><a href="#content">Contents</a></li>
+                <li><a href="#aside" onclick="aside()">Author</a></li>
+                <li><a href="#footer">Bottom</a></li>
             </ul>
             <ul>
                 <li class="burger"><i class="fa-solid fa-bars" onclick="drop()"></i></li>
@@ -28,6 +28,13 @@
         </nav>
     </header>
     <main>
+        <!-- one time message! -->
+        <div class="alert">
+            <i class="fa-solid fa-x" id="c" onclick="closeAlert()"></i>
+            <img src="assets/img/robot.png" alt="line-follower-robot" class="robot">
+            <blockquote>We were sorry! This site were undergoing in built.</blockquote>
+        </div>
+        <!-- end one time message! -->
         <!-- popup -->
         <div class="popup">
             <div class="pop-content"></div>

@@ -12,6 +12,8 @@ let burger = document.querySelector('.burger');
 let cross = document.querySelector('.cross');
 let a = document.querySelector('.a');
 let sider = document.querySelector('.aside');
+let btn4 = document.querySelector('#c');
+let alerts = document.querySelector('.alert');
 
 //show pop-up & close pop-up
 function popUp() {
@@ -41,6 +43,16 @@ function aside() {
 }
 function closeSide() {
     sider.classList.remove('active');
+}
+window.addEventListener('load', function(){
+    setTimeout(
+        function openAlert(event) {
+            document.querySelector('.alert').style.display = "inline";
+        },3000
+    )
+});
+function closeAlert() {
+    alerts.classList.add('active');
 }
 // set-text popup
 btn1.addEventListener('click', function (event) {
